@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One Worker</title>
+</head>
+<body>
+    <h1>One Worker</h1>
+
+    <h1><i>First_name</i>:<%= oneworker.first_name %> </h1>
+    <h2><i>Middle Name</i>:<%= oneworker.middle_name %> </h2>
+    <h2><i>Last Name</i>: <%= oneworker.last_name %> </h2>
+    <b>id no : <%= oneworker.idno%> </b>
+    <i>contact: <%= oneworker.contact %> </i>
+
+    <a href="/workers/<%= oneworker.id %>/edit">Edit Worker</a>
+    <form action="/workers/<%= oneworker.id %>?_method=DELETE" method="post"><button type="submit">Delete</button></form>
+</body>
+</html>

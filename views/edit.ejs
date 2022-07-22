@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Workers</title>
+</head>
+<body>
+    <h1>Edit Worker!!</h1>
+    <form action="/workers/<%= worker.id %>?_method=PUT" method="post">
+        <div>
+            <input type="text" placeholder="first name" name="fname" value="<%= worker.first_name %> ">
+        </div>
+        <div>
+            <input type="text" placeholder="middle name" name="mname" value="<%= worker.middle_name %> ">
+        </div>
+        <div>
+            <input type="text" placeholder="last name" name="lname" value="<%= worker.last_name %> ">
+        </div>
+        <div>
+            <input type="text" placeholder="id number" name="idno" value="<%= worker.idno%> ">
+        </div>
+        <div>
+            <input type="text" placeholder="phone number" name="phone" value="<%= worker.contact%> ">
+        </div>
+
+        <button type="submit">Register Worker</button>
+    </form>
+</body>
+</html>
